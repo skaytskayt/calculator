@@ -1,0 +1,115 @@
+/* montserrat-300 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/montserrat-v26-cyrillic_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v26-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v26-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body{
+  color: white;
+  background-color: black;
+  font-family: 'Montserrat';
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+input:focus{
+  outline: none;
+  caret-color: transparent;
+  text-align: center;
+  font-size: 4rem;
+}
+
+input::placeholder{
+  text-align: center;
+  font-size: 4rem;
+}
+
+.input-task{
+  color: white;
+  background-color: black;
+  border: none;
+  width: 49rem;
+  height: 14rem;
+  margin: 0.3rem 0 0 0.3rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 5rem;
+  margin-block: 5rem;
+}
+
+.wrapper{
+  margin: 0 auto;
+}
+
+.screen-output{
+  width: 50rem;
+  height: 15rem;
+  border: 1px solid white;
+  border-radius: 1rem 1rem 0 0;
+}
+
+
+.buttons-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 0,5fr);
+  gap: 0.3rem;
+  width: 50rem;
+  height: 50rem;
+  border: 1px solid white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+
+button{
+  font-size: 2rem;
+}
+
+
+.equals{
+  grid-column: 2/4;
+  border-radius: 0 0 1rem 0;
+  background-color: white;
+  border: none;
+}
+
+.equals:active{
+  background-color: lightgrey;
+}
+
+.zero{
+  border-radius: 0 0 0 1rem;
+  background-color: white;
+  border: none;
+}
+
+.zero:active{
+  background-color: lightgray;
+}
+
+

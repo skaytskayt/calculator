@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/styles css/style.css">
+  </head>
+  <body>
+    <header><h1>Calculator</h1></header>
+
+    <main>
+      <section class="screen">
+        <div class="screen-output wrapper">
+          <input type="text" class="input-task" placeholder=" " disabled>
+        </div>
+      </section>
+
+      <section class="buttons">
+        <div class="buttons-container wrapper">
+          <button class="delete" onclick="removeOnDisplay()">delete</button>
+          <button class="division" onclick="addOnDisplay('/')">/</button>
+          <button class="plus" onclick="addOnDisplay('+')">+</button>
+          <button class="point" onclick="addOnDisplay('.')">.</button>
+          <button class="multiplication" onclick="addOnDisplay('*')">*</button>
+          <button class="minus" onclick="addOnDisplay('-')">-</button>
+          <button class="seven" onclick="addOnDisplay('7')">7</button>
+          <button class="eight" onclick="addOnDisplay('8')">8</button>
+          <button class="nine" onclick="addOnDisplay('9')">9</button>
+          <button class="four" onclick="addOnDisplay('4')">4</button>
+          <button class="five" onclick="addOnDisplay('5')">5</button>
+          <button class="six" onclick="addOnDisplay('6')">6</button>
+          <button class="one" onclick="addOnDisplay('1')">1</button>
+          <button class="two" onclick="addOnDisplay('2')">2</button>
+          <button class="three" onclick="addOnDisplay('3')">3</button>
+          <button class="zero" onclick="addOnDisplay('0')">0</button>
+          <button class="equals" onclick="calculate(input.value)">=</button>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
