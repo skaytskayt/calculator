@@ -1,17 +1,17 @@
-// const text = "Привет, я калькулятор!"
-// let text1 =''
+const text = "Привет, я калькулятор!"
+let text1 =''
 
-// let cursor = document.createElement('span')
-// cursor.className = 'cursor'
-// cursor.textContent = "|"
+let cursor = document.createElement('span')
+cursor.className = 'cursor'
+cursor.textContent = "|"
 
 
-// let index = 0
+let index = 0
 
 const input = document.querySelector(".input-task")
 
 
-// const p = document.querySelector('.greetings')
+const p = document.querySelector('.greetings')
 
 
 function symbolOutPut(){
