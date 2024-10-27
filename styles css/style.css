@@ -110,7 +110,9 @@ button:active{
   border-radius: 0 0 0 1rem;
 }
 
-
+header{
+  text-align: center;
+}
 
 
 
