@@ -43,6 +43,7 @@ input:focus{
 input::placeholder{
   text-align: center;
   font-size: 4rem;
+  color: grey;
 }
 
 .input-task{
@@ -56,7 +57,7 @@ input::placeholder{
   text-align: center;
 }
 
-h1{
+.greetings{
   text-align: center;
   font-size: 5rem;
   margin-block: 5rem;
@@ -78,38 +79,45 @@ h1{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(6, 0,5fr);
-  gap: 0.3rem;
   width: 50rem;
   height: 50rem;
   border: 1px solid white;
   border-radius: 0 0 1rem 1rem;
 }
 
-
 button{
   font-size: 2rem;
+  border: 1px solid black;
+}
+
+button:hover{
+  background-color: lightgray;
+}
+
+button:active{
+  background-color: white;
 }
 
 
 .equals{
   grid-column: 2/4;
   border-radius: 0 0 1rem 0;
-  background-color: white;
-  border: none;
-}
-
-.equals:active{
-  background-color: lightgrey;
 }
 
 .zero{
   border-radius: 0 0 0 1rem;
-  background-color: white;
-  border: none;
-}
-
-.zero:active{
-  background-color: lightgray;
 }
 
 
+
+
+
+.cursor{
+  animation: opacity 1s infinite;
+}
+
+@keyframes opacity{
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
