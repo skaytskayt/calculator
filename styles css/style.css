@@ -48,7 +48,7 @@ input::placeholder{
 
 .input-task{
   color: white;
-  background-color: black;
+  background-color: transparent;
   border: none;
   width: 49rem;
   height: 14rem;
